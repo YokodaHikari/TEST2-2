@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main_calculator.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+   <div id="container">
+     <div>
+      <input readonly id="result" type="text" value="0">
+      </div>
+    <table>
+    <!-- 上から1段目！ -->
+      <tr>
+      <td><button onclick="num_click(this.innerHTML)">7</button></td>
+      <td><button onclick="num_click(this.innerHTML)">8</button></td>
+      <td><button onclick="num_click(this.innerHTML)">9</button></td>
+      <td><button onclick="ope_click(this.innerHTML)" >+</button></td>
+      </tr>    
+    <!-- 上から2段目！ -->
+      <tr>
+      <td><button onclick="num_click(this.innerHTML)">4</button></td>
+      <td><button onclick="num_click(this.innerHTML)">5</button></td>
+      <td><button onclick="num_click(this.innerHTML)">6</button></td>
+      <td><button onclick="ope_click(this.innerHTML)">-</button></td>
+      </tr>    
+          <!-- 上から3段目！ -->
+      <tr>
+      <td><button onclick="num_click(this.innerHTML)">1</button></td>
+      <td><button onclick="num_click(this.innerHTML)">2</button></td>
+      <td><button onclick="num_click(this.innerHTML)">3</button></td>
+      <td><button onclick="ope_click(this.innerHTML)">×</button></td>
+      </tr>    
+          <!-- 上から4段目！ -->
+      <tr>
+
+      <td colspan="2"><button onclick="num_click(this.innerHTML)">0</button></td>
+      <td><button  onclick="num_click(this.innerHTML)">.</button></td>
+      <td><button onclick="ope_click(this.innerHTML)">÷</button></td>
+      </tr>   
+      <!-- 上から5段目！ -->
+      <tr>
+      <td colspan="2"><button onclick="ac_click(this.innerHTML)">AC</button></td>
+      <td colspan="2"><button onclick="equal_click(this.innerHTML)">=</button></td>
+      </tr>
+    </table>
+   <script src="main_calculator.js"></script>
+   </div>
+ </body>
+ </html>
+ 
+ 
